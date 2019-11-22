@@ -6,8 +6,8 @@ set -x
 sudo apt install autoconf automake libtool -y
 
 ## Git clone mavlink-router
-rm -rf mavlink-router
-[ -d mavlink-router ] || {
+rm -rf ~/mavlink-router
+[ -d ~/mavlink-router ] || {
     git clone https://github.com/intel/mavlink-router.git
 }
 
@@ -18,7 +18,7 @@ pushd ~/mavlink-router
  make
  sudo make install
  sudo mkdir -p /etc/mavlink-router
- sudo cp ../mavlink-router.conf /etc/mavlink-router/main.conf
+ sudo cp ~/apsync-Kakute/mavlink-router.conf /etc/mavlink-router/main.conf
  sudo systemctl enable mavlink-router.service
  sudo systemctl start mavlink-router.service
 popd
