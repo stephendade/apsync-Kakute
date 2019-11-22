@@ -14,13 +14,11 @@ echo "bcm2835-v4l2" | sudo tee -a /etc/modules >/dev/null
     git clone https://github.com/shortstheory/adaptive-streaming.git APStreamline
 }
 pushd APStreamline
- # last commit to work with changing quality levels without crashing
- git checkout d6efd60548dfd34177b47f229ba594fa95a45498
+ git checkout master
  meson build
  pushd build
   meson configure -Dprefix=$HOME/start_apstreamline/
   ninja install
-  sudo mkdir -p /root/start_apstreamline/bin
-  sudo cp $HOME/start_apstreamline/bin/stream_server /root/start_apstreamline/bin/stream_server
+  sudo cp $HOME/start_apstreamline/bin/stream_server /home/pi/APWeb/stream_server
  popd
 popd
