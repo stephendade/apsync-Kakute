@@ -14,7 +14,8 @@ pip2 install future --user
 pushd APWeb
  git submodule update --init --recursive
  make
- sudo cp ../APWeb.service /etc/systemd/system/APWeb.service
- sudo systemctl enable APWeb.service
- sudo systemctl start APWeb.service
 popd
+
+sudo cp APWeb.service /etc/systemd/system/APWeb.service
+sudo systemctl enable APWeb.service
+sudo systemctl start APWeb.service
