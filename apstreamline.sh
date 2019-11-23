@@ -14,7 +14,7 @@ echo "bcm2835-v4l2" | sudo tee -a /etc/modules >/dev/null
     git clone https://github.com/shortstheory/adaptive-streaming.git APStreamline
 }
 pushd ~/APStreamline
- git checkout master
+ git checkout d6efd60548dfd34177b47f229ba594fa95a45498
  meson build
  pushd build
   meson configure -Dprefix=$HOME/start_apstreamline/
