@@ -13,7 +13,7 @@ pip2 install future --user
 }
 pushd ~/APWeb
  git submodule update --init --recursive
- make
+ make CFLAGS=-Wno-error
 popd
 
 sudo cp ~/apsync-Kakute/APWeb.service /etc/systemd/system/APWeb.service
