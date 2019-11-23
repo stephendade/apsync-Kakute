@@ -4,9 +4,6 @@
 set -e
 set -x
 
-# need to run from home directory
-cd ~/
-
 ./wifi_access_point.sh
 
 ## Remove any not required packages

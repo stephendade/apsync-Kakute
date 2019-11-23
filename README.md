@@ -11,8 +11,8 @@ The software is heavily based on the "[APSync](http://ardupilot.org/dev/docs/aps
 
 ## Running
 
-Download this repository to a fresh Raspberry Pi install. It is assumed all the scripts
-are in the ``~/`` (home) directory.
+Download this repository to a fresh Raspberry Pi install. It is assumed this repository has been
+cloned into the ``~/`` directory.
 
 Run each of the ``mainN.sh`` (ie ``main1.sh``, then ``main2.sh``, then ``main3.sh``) scripts in turn. The Raspberry Pi will reboot at the end of each script.
 
