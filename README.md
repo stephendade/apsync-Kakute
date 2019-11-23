@@ -1,8 +1,8 @@
-# KakutePi Companion
+# APSync Companion
 
 ## Introduction
 This repository contains a series of scripts for running on a Raspberry Pi in order
-to configure it for running with the KakutePi board (though it will run on any Raspberry
+to configure it for running with the Pi-Connect board (though it will run on any Raspberry
 Pi with a flight controller connected to the UART).
 
 The scripts are designed to be as automated as possible.
