@@ -19,6 +19,6 @@ pushd ~/APStreamline
  pushd build
   meson configure -Dprefix=$HOME/start_apstreamline/
   ninja install
-  sudo cp $HOME/start_apstreamline/bin/stream_server /home/pi/APWeb/stream_server
+  cp $HOME/start_apstreamline/bin/stream_server /bin/stream_server
  popd
 popd
