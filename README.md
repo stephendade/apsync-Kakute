@@ -22,7 +22,7 @@ At the end, the Raspberry Pi will be ready for use.
 
 The Flight controller (Kakute F4 in this case) needs to have the following parameters set:
 - ``SERIAL1_BAUD     921``
-- ``SERIAL1_OPTIONS  2``
+- ``SERIAL1_PROTOCOL  2``
 
 The software running includes:
 - [mavlink-router](https://github.com/intel/mavlink-router) for distributing telemetry
